@@ -15,12 +15,14 @@ int main()
     char voto;
     printf("Digite o numero de eleitores: ");
     scanf("%d", &eleitores);
+    getchar();
     for (int i = 1; i <= eleitores; i++)
     {
         printf("Digite o numero (1/2/3) do candidato em quem o eleitor %d "
                "quer votar: ",
                i);
         scanf("%c", &voto);
+        getchar();
         if (voto == '1')
             votos_candidato_1++;
         if (voto == '2')
